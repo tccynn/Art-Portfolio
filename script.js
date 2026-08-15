@@ -48,52 +48,13 @@ document.addEventListener("DOMContentLoaded", function () {
         const originalText = `Wechat/QQ`;
         const btn = this;
 
-        function showSuccess() {
+        navigator.clipboard.writeText(targetId).then(() => {
             btn.innerText = "ID Copied! ✓";
             btn.classList.add("copied");
             setTimeout(() => {
                 btn.innerText = originalText;
                 btn.classList.remove("copied");
             }, 1500);
-        }
-
-        if (navigator.clipboard && window.isSecureContext) {
-            navigator.clipboard.writeText(targetId)
-                .then(showSuccess)
-                .catch(() => fallbackCopy(targetId, showSuccess));
-        } else {
-            fallbackCopy(targetId, showSuccess);
-        }
+        });
     });
-
-    function fallbackCopy(text, callback) {
-        const textArea = document.createElement("textarea");
-        textArea.value = text;
-        textArea.style.position = "fixed";
-        textArea.style.top = "0";
-        textArea.style.left = "0";
-        textArea.style.width = "2em";
-        textArea.style.height = "2em";
-        textArea.style.padding = "0";
-        textArea.style.border = "none";
-        textArea.style.outline = "none";
-        textArea.style.background = "transparent";
-
-        document.body.appendChild(textArea);
-        textArea.focus();
-        textArea.select();
-
-        try {
-            const successful = document.execCommand('copy');
-            if (successful) {
-                callback();
-            } else {
-                prompt("Please copy manually:", text);
-            }
-        } catch (err) {
-            prompt("Please copy manually:", text);
-        }
-
-        document.body.removeChild(textArea);
-    }
 });
