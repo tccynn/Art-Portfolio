@@ -572,8 +572,6 @@ a.channel-tag.highlight:hover {
 
     .lang-toggle {
         top: 12px;
-        right: 12px;
-        padding: 5px 12px;
-        font-size: 0.78rem;
+        left: 12px;
     }
 }
