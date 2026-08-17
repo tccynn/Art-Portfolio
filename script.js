@@ -35,7 +35,7 @@
 })();
 
 /* ==========================================================
-   一键复制 WeChat/QQ
+   一键复制
    ========================================================== */
 document.addEventListener("DOMContentLoaded", function () {
     const copyBtn = document.getElementById("copy-btn");
@@ -45,11 +45,12 @@ document.addEventListener("DOMContentLoaded", function () {
         e.preventDefault();
 
         const targetId = this.getAttribute("data-id");
-        const originalText = `Wechat/QQ`;
+        const currentLang = document.documentElement.getAttribute("lang") || "en";
         const btn = this;
+        const originalText = currentLang === "zh" ? btn.dataset.zh : btn.dataset.en;
 
         navigator.clipboard.writeText(targetId).then(() => {
-            btn.innerText = "ID Copied! ✓";
+            btn.innerText = currentLang === "zh" ? "已复制 ID！✓" : "ID Copied! ✓";
             btn.classList.add("copied");
             setTimeout(() => {
                 btn.innerText = originalText;
