@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <!-- Google 字体库 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- 中/英文切换按钮 -->
+    <button id="lang-toggle" class="btn btn--elevated btn--fixed" type="button" aria-label="Switch language">中文</button>
+
+    <!-- 标题 header -->
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Cynn Logo">
+        </div>
+
+        <h1 class="profile-title" data-en="Cynn" data-zh="同尘"></h1>
+        <p class="profile-subtitle" data-en="Art Portfolio" data-zh="个人插画作品集"></p>
+    </header>
+
+    <!-- 关于我 About Me -->
+    <main>
+        <h2 class="section-title" data-en="About Me" data-zh="关于我"></h2>
+
+        <div class="tags">
+            <span class="tag" data-en="Visual Storytelling" data-zh="视觉叙事"></span>
+            <span class="tag" data-en="World Building" data-zh="世界观构建"></span>
+            <span class="tag" data-en="Character Design" data-zh="角色设计"></span>
+        </div>
+
+        <br>
+
+        <div class="bio-text">
+            <p class="body-text--reg" data-en="I am a self-taught illustrator working under the name Cynn, primarily creating digital artwork using Procreate. I specialise in character-focused illustration and visual storytelling."
+               data-zh="你好，我是同尘，一名自学的业余插画师，主要使用 Procreate 绘制数字作品，擅长角色插画与视觉叙事。"></p>
+
+            <p class="body-text--reg" data-en="Alongside commissioned work for private clients and fan art based on existing IPs, I develop original projects that explore imagined yet believable worlds and the stories within them. I particularly enjoy creating narrative-driven illustrations, with a strong focus on character interactions, emotion, and atmosphere, often incorporating symbolic elements inspired by nature, music and philosophy."
+               data-zh="除了承接私人委托和绘制既有IP的同人作品外，我也在开发自己的原创项目，探索那些虚构却又令人信服的世界与故事。我尤其喜欢创作有叙事感的插画，注重角色之间的互动、情绪的传递与氛围塑造，也经常融入受自然、音乐和哲学启发的象征性元素。"></p>
+
+            <p class="body-text--reg" data-en="Coming from an academic background outside the arts, I have developed my illustration skills through structured self-directed study, enabling me to respond quickly to new demands and challenges. While my current portfolio reflects an anime-inspired style, I continue to experiment with diverse techniques and visual approaches to tailor my work for different creative projects."
+               data-zh="虽然我的专业背景与艺术领域无关，但通过长期的系统自学和刻意练习，我逐渐掌握了插画创作的能力，也练就了快速适应新需求的灵活性。目前我的作品以动漫风格为主，不过我也一直在尝试各种不同的技法和视觉形式，以便更好地匹配不同项目的创作需求。"></p>
+
+            <p class="body-text--reg" data-en="I welcome opportunities for collaborations and community-based projects."
+               data-zh="无论是合作邀约还是社群共创项目，我都乐于参与，欢迎与我联系。"></p>
+        </div>
+    </main>
+
+    <!-- 画册 -->
+    <main>
+        <h2 class="section-title" data-en="My Work" data-zh="我的作品"></h2>
+        <div class="gallery">
+            <!-- 第一列 -->
+            <div class="gallery-column">
+                <div class="card-base gallery-item">
+                    <div class="img-container"><img src="images/2605.jpg" alt="Lotus in the Dust"></div>
+                    <div class="item-info">
+                        <h3 class="card-title" data-en="Lotus in the Dust" data-zh="尘中莲"></h3>
+                        <p class="body-text body-text--sm item-desc" data-en="This piece was inspired by the lyric “梦驮莲花苦难走” (a dream carries a lotus through hardship). I chose to portray my original persona with a lotus growing from her back as a symbolic element. The composition brings together several motifs closely connected to the character and to my own ideas: the Taiji symbolising Daoist thought, mountains representing nature, the banyan tree as my favourite tree... I allowing these elements to come together as a visual expression of how I imagine her."
+                                             data-zh="这幅作品的灵感来自于“梦驮莲花苦难走”这句歌词。我选择以我的原创主体为载体，令莲花从其背部生长而出。画面同时融入了许多与我个人理念紧密相关的元素：太极所代表的道家思想、山川所象征的自然、榕树是我最喜欢的树……我让这些元素自然交融，共同构成我心目中属于她的形象。"></p>
+                        <div class="item-meta" data-en="May 2026" data-zh="2026 年 5 月"></div>
+                    </div>
+                </div>
+
+                <div class="card-base gallery-item">
+                    <div class="img-container"><img src="images/2508-3.jpg" alt="Only Later Did We Know These Days Were Ordinary"></div>
+                    <div class="item-info">
+                        <h3 class="card-title" data-en="Only Later Did We Know These Days Were Ordinary" data-zh="当时只道是寻常"></h3>
+                        <p class="body-text body-text--sm item-desc" data-en="This Qixi illustration features my original characters Yi Qiu and Lin Xia, a physicist and a mathematician who are also a couple. Rather than depicting a dramatic moment in their relationship, I wanted to capture an ordinary lunch with their colleagues at a small Chongqing noodle restaurant. These seemingly unremarkable moments are often the ones that become precious when remembered years later. I therefore chose to focus on the couple from behind, allowing the scene to feel like a fleeting moment from their everyday lives."
+                                             data-zh="这是我为自己的原创角色创作的七夕贺图，他们是物理学家邱逸与数学家夏临，也是一对恋人。比起描绘两人关系中某个轰轰烈烈的瞬间，我更想讲述他们与课题组的同事一起，在楼下吃一碗普通的重庆小面——也许正是这样的寻常时刻，在多年以后回望时才会显得格外珍贵。所以我选择了两人的背影作为画面的中心，让这个故事停留在一个没有刻意安排的日常瞬间。"></p>
+                        <div class="item-meta" data-en="August 2025" data-zh="2025 年 8 月"></div>
+                    </div>
+                </div>
+
+                <div class="card-base gallery-item">
+                    <div class="img-container"><img src="images/2503.jpg" alt="Beautiful on One Side, Chaotic on the Other"></div>
+                    <div class="item-info">
+                        <h3 class="card-title" data-en="Beautiful on One Side, Chaotic on the Other" data-zh="一边绮丽，一边狼藉"></h3>
+                        <p class="body-text body-text--sm item-desc" data-en="This piece began with a visual association while I was studying Lagrangian mechanics. Looking at diagrams of cones and conic sections, I noticed that two opposing cones could resemble a pair of wings. I then realised that the same geometry could also represent a light cone in special relativity, and decided to build the illustration around this connection. The conic sections are arranged in the seven colours of the visible spectrum, allowing mathematical geometry, physics and visual symbolism to overlap."
+                                             data-zh="这幅作品诞生于我学习拉格朗日力学时的一次联想。当我看到圆锥和圆锥曲线的示意图时，我突然发现，对顶的两个圆锥很像一对展开的翅膀；随后我又意识到，同样的几何结构其实也可以对应狭义相对论中的光锥。于是我决定围绕这一关联展开创作：七个的圆锥曲线切面被赋予可见光谱的七种颜色，使几何、物理学与视觉意象彼此重叠。"></p>
+                        <div class="item-meta" data-en="March 2025" data-zh="2025 年 3 月"></div>
+                    </div>
+                </div>
+
+                <div class="card-base gallery-item">
+                    <div class="img-container"><img src="images/2508-1.jpg" alt="Escape from Earth"></div>
+                    <div class="item-info">
+                        <h3 class="card-title" data-en="Escape from Earth" data-zh="逃离地球"></h3>
+                        <p class="body-text body-text--sm item-desc" data-en="This was a private commission based on a client-provided character design, costume, composition and storyline, in which the characters escape from Earth together. My role was to translate these requirements into a finished illustration while preserving the intended relationship and narrative."
+                                             data-zh="这是一幅私人委托作品，基于客户提供的角色设定、服饰、构图以及剧情框架。我负责将这些要求转化为完整的插画，同时精准传达其中的人物关系与叙事意图。"></p>
+                        <div class="item-meta" data-en="August 2025" data-zh="2025 年 8 月"></div>
+                    </div>
+                </div>
+
+                <div class="card-base gallery-item">
+                    <div class="img-container"><img src="images/2407.jpg" alt="Across the Stars"></div>
+                    <div class="item-info">
+                        <!-- 含斜体标签 HTML 结构 -->
+                        <h3 class="card-title" data-en-html="Across the Stars" data-zh-html="穿越星际"></h3>
+                        <p class="body-text body-text--sm item-desc" data-en-html="This fan illustration was created for a <i>Honkai: Star Rail</i> Qixi project themed around cinema. I chose <i>Interstellar</i> as the visual reference and imagined Topaz and Aventurine within an alternate, cinematic setting of their own. Starting from a composition inspired by the film, I preserve the emotional atmosphere of the original reference while placing familiar characters into a different narrative context."
+                                             data-zh-html="这是我为《崩坏：星穹铁道》七夕企划创作的同人作品，企划主题为“电影”。我选择以《星际穿越》为视觉参考，为托帕与砂金构建了一个电影感的平行设定：以原电影的经典构图为基础，在保留原作情感氛围的同时，让熟悉的角色置身于不同的叙事语境中。"></p>
+                        <div class="item-meta" data-en="July 2024" data-zh="2024 年 7 月"></div>
+                    </div>
+                </div>
+
+                <div class="card-base gallery-item">
+                    <div class="img-container"><img src="images/2412.jpg" alt="Before We Pass By"></div>
+                    <div class="item-info">
+                        <h3 class="card-title" data-en="Before We Pass By" data-zh="擦肩之前"></h3>
+                        <p class="body-text body-text--sm item-desc" data-en="This illustration was created for a friend’s original characters, whose relationship is shaped by the atmosphere of a road-trip romance. A summer journey and a sudden rainstorm form an important part of their story, while the central idea was that two people who might have simply passed each other somehow still ended up meeting. Working from my friend’s compositional reference, I developed the characters and atmosphere around this idea, aiming for a meeting that feels both accidental and inevitable."
+                                             data-zh="这是一幅为朋友的原创角色创作的双人插画，他们之间的故事带着一种公路旅行特有的浪漫气息。一场夏日远行和一场不期而至的暴雨是两人故事中的重要篇章，而画面想要传达的核心其实很简单：两个人本可能擦肩而过的人，终究还是相遇了。我参考了朋友提供的构图方向，并在此基础上刻画角色和氛围，希望让这一次相遇看起来既偶然，又像是注定发生。"></p>
+                        <div class="item-meta" data-en="Dec 2024" data-zh="2024 年 12 月"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 第二列 -->
+            <div class="gallery-column">
+                <div class="card-base gallery-item">
+                    <div class="img-container"><img src="images/2504-1.jpg" alt="To Become Spring Soil"></div>
+                    <div class="item-info">
+                        <h3 class="card-title" data-en="To Become Spring Soil" data-zh="化作春泥"></h3>
+                        <p class="body-text body-text--sm item-desc" data-en="Rong Liu is one of my original characters, a young researcher studying neuroscience. Her story is closely connected to the idea of emergent consciousness that also underlies my original persona, and explores the boundaries between life, consciousness and knowledge. In her possible ending, she chooses to sacrifice herself in order to overcome a seemingly insurmountable barrier in her research. The composition therefore became a metaphor for her ending: a life that is lost, yet continues to nourish what comes after it, whilst also hinting at the unfinished nature of her pursuit."
+                                             data-zh="柳荣是我原创角色之一，一名研究脑神经科学的年轻学者。她与我原创主体背后的核心命题“意识涌现”紧密相连，因此她的故事围绕生命、意识与知识的边界展开。在其中一个可能的结局中，她选择自我牺牲，以突破研究中一道看似不可逾越的屏障。这幅画的构图便是对这个结局的隐喻：生命虽已消逝，却仍在滋养此后的一切，同时也暗示着她未尽的求索。"></p>
+                        <div class="item-meta" data-en="April 2025" data-zh="2025 年 4 月"></div>
+                    </div>
+                </div>
+
+                <div class="card-base gallery-item">
+                    <div class="img-container"><img src="images/2602.jpg" alt="Passing Through This World"></div>
+                    <div class="item-info">
+                        <h3 class="card-title" data-en="Passing Through This World" data-zh="路过人间"></h3>
+                        <p class="body-text body-text--sm item-desc" data-en="Siyuan Jiang is another original character of mine, a grassroots public servant who combines idealism with a strong practical spirit. Her grandfather was a flood-rescue hero, but one difficult decision he made left a lasting sense of regret in her father. Since her grandfather died before she was born, Jiang can only reconstruct the image of her grandfather through other people’s memories and the objects he left behind. Years later, she chooses the same path of public service and eventually saves everyone during a flood, thereby resolving that old regret that was never truly hers to begin with. The illustration was inspired by a photograph of a tree stump whose reflection revealed a flourishing canopy. I adapted this image of &quot;renewal through reflection&quot; to connect Jiang’s present self with her childhood, her father and the grandfather she never knew."
+                                             data-zh="江思源是我另一个原创角色，她是一名扎根基层的干部，也是一个天生的实干家与理想主义者。她的爷爷曾是一名抗洪英雄，但当年一个艰难的抉择，在她的父亲心里埋下了深深的遗憾。由于爷爷在她出生前便已去世，江思源只能从别人的叙述和他留下的旧物里一点点拼凑出爷爷的模样；多年后，她走上了和爷爷同样的路，在一场洪水中救下了所有人，也因此化解了那份本不该由她来背负、却始终影响着她的遗憾。这幅作品的灵感来自一张树桩的摄影作品，积水中倒映出的是树桩早已失去的繁茂树冠。我将“倒影中的新生”的意象加以转化，让江思源的现在和她的童年、她的父亲、还有她从未见过的爷爷，在画面里连结在一起。"></p>
+                        <div class="item-meta" data-en="February 2026" data-zh="2026 年 2 月"></div>
+                    </div>
+                </div>
+
+                <div class="card-base gallery-item">
+                    <div class="img-container"><img src="images/2506.jpg" alt="Quiet Reflection"></div>
+                    <div class="item-info">
+                        <h3 class="card-title" data-en="Reflection" data-zh="倒影"></h3>
+                        <p class="body-text body-text--sm item-desc" data-en="This private commission began with a client-provided character, pose and composition: the character sitting before a mirror, with the vine-like scars on her back revealed in the reflection. Through discussion with the client, I developed the visual concept further by replacing the mirror frame with thorns and the reflective surface with water, creating a stronger connection between the character’s scars and her ability to control plant growth. The final artwork was also prepared with a transparent background so that the client could produce it as a physical card."
+                                             data-zh="这是一幅私人委托作品。客户最初提出了角色、动作与构图：角色坐在镜子前，镜中倒映出她背部藤蔓般的疤痕。我在与客户沟通的过程中进一步调整了视觉语言，以荆棘取代镜框，并将镜面转化为水面，使角色的的疤痕与她操控植物生长的能力之间形成更紧密的联系。最终成品还预留了透明背景版本，以便客户制成实体小卡。"></p>
+                        <div class="item-meta" data-en="June 2025" data-zh="2025 年 6 月"></div>
+                    </div>
+                </div>
+
+                <div class="card-base gallery-item">
+                    <div class="img-container"><img src="images/2510.jpg" alt="Sweet Dream"></div>
+                    <div class="item-info">
+                        <h3 class="card-title" data-en="Sweet Dream" data-zh="美梦"></h3>
+                        <p class="body-text body-text--sm item-desc" data-en="This private commission depicts a “female assassin × underground doctor” alternate universe created by the client. The main composition and visual reference were provided by the client, while I developed the theatrical setting and incorporated additional details requested during the process, including wooden dolls scattered throughout the scene. The contrast between the elegant curtain call and the handcuffs connecting the characters’ hands was central to the final image."
+                                             data-zh="这是一幅私人委托作品，描绘了客户设定中的“杀手小姐 × 地下医生”平行宇宙。客户提供了主要构图与视觉参考，我在此基础上深化了舞台感的场景设定，并在创作过程中根据需求加入散落于画面各处的木偶等细节。优雅的谢幕姿态与连接两人双手的手铐之间的反差，构成了最终画面的核心张力。"></p>
+                        <div class="item-meta" data-en="October 2025" data-zh="2025 年 10 月"></div>
+                    </div>
+                </div>
+
+                <div class="card-base gallery-item">
+                    <div class="img-container"><img src="images/2508-2.jpg" alt="Night Ride"></div>
+                    <div class="item-info">
+                        <h3 class="card-title" data-en="Night Ride" data-zh="夜行"></h3>
+                        <p class="body-text body-text--sm item-desc" data-en="This private commission features two existing characters in an intimate nighttime scene by the riverside. The client provided the main composition, including the road, the open car trunk and the characters’ interaction. I focused on translating these requirements into a cohesive night-time atmosphere, using the light from the sparklers as a warm visual focal point between the characters."
+                                             data-zh="这件私人委托描绘了两位既有角色在河畔夜色中的亲密场景，客户提供了主要构图，包括道路、敞开的汽车后备箱以及角色之间的互动。我的工作重心是将这些要求转化为统一而富有氛围感的夜景画面，以烟火棒的光芒作为角色之间温暖而聚焦的视觉中心。"></p>
+                        <div class="item-meta" data-en="August 2025" data-zh="2025 年 8 月"></div>
+                    </div>
+                </div>
+
+                <div class="card-base gallery-item">
+                    <div class="img-container"><img src="images/2504-2.jpg" alt="Golden Tears"></div>
+                    <div class="item-info">
+                        <h3 class="card-title" data-en="Golden Tears" data-zh="黄金泪"></h3>
+                        <p class="body-text body-text--sm item-desc" data-en-html="I created this fan illustration after finishing the Amphoreus storyline in <i>Honkai: Star Rail</i>. What stayed with me most was the moment when Aglaea and Anaxa finally came to understand each other at the end of their lives. Rather than recreating a specific scene from the story, I wanted to translate that feeling of belated understanding into a symbolic image. I placed Aglaea within Anaxa’s shattered eye socket, with golden threads and ribbons drifting outward from her like tears."
+                            data-zh-html="这幅作品是在完成《崩坏：星穹铁道》翁法罗斯篇章后创作的同人作品。最令我难以忘怀的，是阿格莱雅与那刻夏在生命尽头终于真正理解彼此的那一瞬间。比起复现故事中的某个具体场景，我更希望将那种迟来的共感转化成一种更象征性的表达：将阿格莱雅置于在那刻夏破碎的眼眶之中，金色的丝线与缎带像眼泪一般从她周身向外飘散。"></p>
+                        <div class="item-meta" data-en="April 2025" data-zh="2025 年 4 月"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 服务介绍 Services -->
+    <section id="services" class="services-section">
+        <div class="section-header">
+            <h2 class="section-title" data-en="Services & Collaborations" data-zh="服务与合作"></h2>
+        </div>
+
+        <div class="services-grid">
+            <!-- Card 1 -->
+            <div class="card-base service-card">
+                <h3 class="card-title card-title--regular" data-en="Custom Illustration" data-zh="定制插画"></h3>
+                <div class="service-icon">✦</div>
+                <ul class="service-list">
+                    <li class="body-text body-text--sm" data-en="OC & fanart commissions" data-zh="原创角色（OC）与同人约稿"></li>
+                    <li class="body-text body-text--sm" data-en="Novel cover & interior illustrations" data-zh="小说封面与内页插画"></li>
+                    <li class="body-text body-text--sm" data-en="Artbook pages" data-zh="设定集画页与角色展示"></li>
+                    <li class="body-text body-text--sm" data-en="Merchandise art" data-zh="周边物料用图"></li>
+                </ul>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card-base service-card">
+                <h3 class="card-title card-title--regular" data-en="Concept & Symbol Design" data-zh="概念与符号设计"></h3>
+                <div class="service-icon">✧</div>
+                <ul class="service-list">
+                    <li class="body-text body-text--sm" data-en="Character costume & prop concept sheets" data-zh="角色服饰与道具概念设定图"></li>
+                    <li class="body-text body-text--sm" data-en="Symbolic logos & personal emblems" data-zh="象征性 Logo 与个人徽标"></li>
+                    <li class="body-text body-text--sm" data-en="World-building visual exploration" data-zh="世界观构建的视觉探索"></li>
+                </ul>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card-base service-card">
+                <h3 class="card-title card-title--regular" data-en="Art Polish & Refinement" data-zh="画面精修与再加工"></h3>
+                <div class="service-icon">✦</div>
+                <ul class="service-list">
+                    <li class="body-text body-text--sm" data-en="Draft/lineart refinement & full completion" data-zh="草稿、线稿细化与完稿"></li>
+                    <li class="body-text body-text--sm" data-en="Anatomy/lighting fixes & color grading" data-zh="人体结构、光影修正与色调调整"></li>
+                    <li class="body-text body-text--sm" data-en="Live2D model artwork layering" data-zh="Live2D 模型图层拆分"></li>
+                </ul>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card-base service-card">
+                <h3 class="card-title card-title--regular" data-en="Art Discussion & Advice" data-zh="绘画交流与答疑"></h3>
+                <div class="service-icon">✦</div>
+                <ul class="service-list">
+                    <li class="body-text body-text--sm" data-en="Identify issues in artwork and suggest solutions" data-zh="诊断画面问题并提供改进思路"></li>
+                    <li class="body-text body-text--sm" data-en="Recommend practice methods for specific difficulties" data-zh="针对具体绘画难点推荐练习方法"></li>
+                    <li class="body-text body-text--sm" data-en="Experience sharing on self-study and artistic growth" data-zh="自学与突破的心得分享"></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系方式 Footer -->
+    <footer id="contact" class="site-footer">
+        <div class="footer-container">
+
+            <div class="footer-header">
+                <h2 class="section-title section-title--lg" data-en="Get in Touch" data-zh="联系我"></h2>
+                <p class="body-text" data-en="Interested in collaborating or have a project in mind? Welcome to reach out through whichever way feels most comfortable to you."
+                                           data-zh="有合作意向或正在酝酿的项目想聊一聊？欢迎通过您最习惯的方式找到我。"></p>
+            </div>
+
+            <div class="contact-channels-grid">
+                <!-- 社交平台 -->
+                <div class="channel-column">
+                    <h3 class="card-title card-title--regular channel-label" data-en="Social Media" data-zh="社交平台"></h3>
+                    <p class="body-text body-text--sm channel-hint" data-en="Sketches, works in progress, and latest artwork updates." data-zh="分享草稿、创作过程和最新作品动态。"></p>
+                    <div class="channel-tags">
+                        <a href="https://xhslink.cn/m/ASZ4pfhH0Q6" class="btn" target="_blank">小红书</a>
+                        <a href="https://twitter.com/tccynn?s=21&t=yY7CDqxd5rRWAOADdn2USw" class="btn" target="_blank">X (Twitter)</a>
+                    </div>
+                </div>
+
+                <!-- 平台约稿 -->
+                <div class="channel-column">
+                    <h3 class="card-title card-title--regular channel-label" data-en="Commission Platforms" data-zh="约稿平台"></h3>
+                    <p class="body-text body-text--sm channel-hint" data-en="For clients who prefer third-party platforms with transaction protection." data-zh="适合偏好第三方平台交易保障的客户。"></p>
+                    <div class="channel-tags">
+                        <a href="https://www.mihuashi.com/profiles/4021589?role=painter&utm_source=direct&utm_campaign=userpage&utm_medium=share" class="btn" target="_blank">米画师</a>
+                        <a href="https://www.pixiv.net/users/78786137" class="btn" target="_blank">Pixiv</a>
+                    </div>
+                </div>
+
+                <!-- 直接联系 -->
+                <div class="channel-column">
+                    <h3 class="card-title card-title--regular channel-label" data-en="Direct Contact" data-zh="直接联系"></h3>
+                    <p class="body-text body-text--sm channel-hint" data-en="No platform fees. Ideal for commercial or private commissions." data-zh="无平台手续费，适合商业或私人委托。">No platform fees. Ideal for commercial or private commissions.</p>
+                    <div class="channel-tags">
+                        <a href="mailto:tccynn@outlook.com" class="btn btn--solid">Email</a>
+                        <a href="#" id="copy-btn" class="btn copy-btn" data-id="imtccynn" data-en="WeChat/QQ" data-zh="微信/QQ"></a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p class="copyright">&copy; 2026 Cynn. All rights reserved.</p>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
